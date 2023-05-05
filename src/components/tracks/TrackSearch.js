@@ -1,0 +1,19 @@
+
+
+
+
+export const TrackSearch = ({setterFunction}) => {
+    return (
+        <div>
+            <input 
+            onChange={
+                (changeEvent) => {
+                    setterFunction(changeEvent.target.value)
+                }
+            }
+            type="text" placeholder="Search for a track" />
+        </div>
+
+
+        )
+    }

@@ -1,0 +1,24 @@
+.tracks {
+    display: flex;
+    flex-direction: column;
+}
+
+.track--list {
+    background-color: rgb(211, 229, 223);
+    border: 1px dotted coral;
+    padding: 0.7rem;
+    margin: 0.5rem;
+
+}
+
+.form-group {
+    background-color: rgb(211, 229, 223);
+    border: 1px dotted coral;
+    padding: 0.7rem;
+    margin: 0.5rem;
+}
+
+.delete__track {
+    margin-left: auto;
+    background-color: rgb(246, 218, 212);
+}
