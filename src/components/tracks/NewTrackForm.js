@@ -57,11 +57,12 @@ export const NewTrackForm = () => {
   }
 
   return (
+    <div className="flex justify-between items-center h-20">
     <form className="trackForm">
       <h2 className="trackForm__title">Submit New Track</h2>
       <fieldset>
         <div className="form-group">
-          <label htmlFor="ArtistName">Artist Name:</label>
+          <label htmlFor="ArtistName" className="song_artist_label">Artist Name:</label>
           <input
             required
             autoFocus
@@ -79,7 +80,7 @@ export const NewTrackForm = () => {
       </fieldset>
       <fieldset>
         <div className="form-group">
-          <label htmlFor="SongName">Song Name:</label>
+          <label htmlFor="SongName" className="song_artist_label">Song Name:</label>
           <input
             required
             autoFocus
@@ -100,7 +101,7 @@ export const NewTrackForm = () => {
         <div className="form-group">
           <label htmlFor="genre">
             Genre:
-            <select
+            <select className="select_dropdown"
               value={track.genreId}
               onChange={(evt) => {
                 const copy = { ...track }
@@ -125,7 +126,7 @@ export const NewTrackForm = () => {
         <div className="form-group">
           <label htmlFor="range">
             Best for testing (frequency):
-            <select
+            <select className="select_dropdown"
               value={track.rangeId}
               onChange={(evt) => {
                 const copy = { ...track }
@@ -146,12 +147,13 @@ export const NewTrackForm = () => {
         </div>
       </fieldset>
 
-      <button
+      <button className="submit_track_button"
         onClick={(clickEvent) => handleSaveButtonClick(clickEvent)}
-        className="btn btn-primary"
+        
       >
         Submit Track
       </button>
     </form>
+    </div>
   )
 }

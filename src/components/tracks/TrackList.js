@@ -11,7 +11,7 @@ export const TrackList = ({searchTermsState}) => {
   const loggedInUser = JSON.parse(localStorage.getItem("hifi_user"))
   
   useEffect(() => {
-    fetch(` http://localhost:8088/tracks?_expand=genre&_expand=range`)
+    fetch(`http://localhost:8088/tracks?_expand=genre&_expand=range`)
       .then((response) => response.json())
       .then((trackArray) => {
         setTracks(trackArray)
@@ -27,7 +27,7 @@ export const TrackList = ({searchTermsState}) => {
   }, [])
 
   const getTracks = () => {
-    return fetch(` http://localhost:8088/tracks?_expand=genre&_expand=range`)
+    return fetch(`http://localhost:8088/tracks?_expand=genre&_expand=range`)
       .then((response) => response.json())
       .then((trackArray) => {
         setTracks(trackArray)
@@ -45,7 +45,7 @@ export const TrackList = ({searchTermsState}) => {
     })
   }
 
-  //TODO earch does not work! The user should be able to type song name, artist or genre in the search.
+  // TODO earch does not work! The user should be able to type song name, artist or genre in the search.
   useEffect(
     () => {
       const searchedTracks = tracks.filter(track => {
@@ -58,15 +58,18 @@ export const TrackList = ({searchTermsState}) => {
  return (
     <>
       <h2>View All Tracks:</h2>
-      <article className="tracks">
+      <div className="tracks">
         {tracks.map((track) => {
           return (
             <section className="track--list" key={`track--${track.id}`}>
               
+             
               <ul>Artist: {track.artistName}</ul>
               <ul>Track: {track.songName}</ul>
               <ul>Genre: {track.genre.genre}</ul>
               <ul>Best for testing (range): {track.range.frequency}</ul>
+             
+                
                 {track.userId === (loggedInUser.id) && <>
               
                   <Link to={`/tracks/edit/${track.id}`}><button className="editTrackButton">Edit Track</button></Link>
@@ -76,7 +79,7 @@ export const TrackList = ({searchTermsState}) => {
             </section>
           )
         })}
-      </article>
+      </div>
     </>
   )
 }

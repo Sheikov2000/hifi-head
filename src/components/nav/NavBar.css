@@ -3,9 +3,21 @@
 display: flex;
 flex-direction: row;
 justify-content: space-around;
+list-style-type: none;
+}
 
-
-    list-style-type: none;
+.log_out_button {
+    margin-left: auto;
+    margin: 0.5rem;
 }
     
+.submit_track_button {
+    margin-left: auto;
+    margin: 0.5rem;
 
+}
+
+.view_tracks_button {
+    margin-left: auto;
+    margin: 0.5rem;
+}
