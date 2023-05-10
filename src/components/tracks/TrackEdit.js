@@ -102,7 +102,7 @@ const handleSaveButtonClick = (event) => {
         <div className="form-group">
           <label htmlFor="genre">
             Genre:
-            <select
+            <select className="select_dropdown"
               value={track.genreId}
               onChange={(evt) => {
                 const copy = { ...track }
@@ -127,7 +127,7 @@ const handleSaveButtonClick = (event) => {
         <div className="form-group">
           <label htmlFor="range">
             Best for testing (frequency):
-            <select
+            <select className="select_dropdown"
               value={track.rangeId}
               onChange={(evt) => {
                 const copy = { ...track }
@@ -150,7 +150,7 @@ const handleSaveButtonClick = (event) => {
 
       <button
         onClick={(clickEvent) => handleSaveButtonClick(clickEvent)}
-        className="btn btn-primary"
+        className="save__changes"
       >
         Save Changes
       </button>

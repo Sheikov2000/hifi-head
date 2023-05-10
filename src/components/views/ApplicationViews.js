@@ -14,7 +14,7 @@ export const ApplicationViews = () => {
         path="/"
         element={
           <>
-            <h1>Hi-Fi Head!</h1>
+            <h1>🎧 Hi-Fi Head!</h1>
             <Outlet />
           </>
         }

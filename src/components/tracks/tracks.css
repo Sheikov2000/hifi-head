@@ -1,24 +1,74 @@
 .tracks {
     display: flex;
-    flex-direction: column;
+    flex-wrap: wrap;
+    flex-direction:column;
 }
 
 .track--list {
-    background-color: rgb(211, 229, 223);
-    border: 1px dotted coral;
+    
+    background-color: black;
+    border: 1.5px solid coral;
     padding: 0.7rem;
     margin: 0.5rem;
-
+    border-radius: 8px;
+    
 }
 
 .form-group {
-    background-color: rgb(211, 229, 223);
-    border: 1px dotted coral;
+    color: rgb(188, 182, 182);
+    background-color: black;
+    border: 1.5px solid coral;
     padding: 0.7rem;
     margin: 0.5rem;
+    border-radius: 8px;
+}
+
+.song_artist_label {
+    margin-left: 0.5rem;
+}
+
+.form-control {
+    width: 20em;
+    height: 1.5em;
+    position: relative;
 }
 
 .delete__track {
     margin-left: auto;
-    background-color: rgb(246, 218, 212);
+    margin: 0.5rem;
+   
+}
+
+.editTrackButton {
+    margin-left: auto;
+    margin: 0.5rem;
+    
+}
+
+.save__changes {
+   
+        color: white;
+        font-family: "Comfortaa", Arial, sans-serif;
+        font-size: 14px;
+        margin: 0.5rem;
+        line-height: 1.5;
+      
+}
+
+.submit_track_button {
+    margin-left: auto;
+    margin: 0.5rem;
+    
+   
+}
+
+.search_bar_input {
+    border-radius: 4px;
+    color:rgb(101, 101, 101);
+   
+    
+}
+
+.select_dropdown {
+    color: rgb(101, 101, 101);
 }

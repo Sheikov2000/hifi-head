@@ -35,10 +35,10 @@ export const Login = () => {
     <main className="container--login">
       <section>
         <form className="form--login" onSubmit={handleLogin}>
-          <h1>Hi-Fi Head!</h1>
-          <h3>User based audiophile track list</h3>
+          <h1>🎧 Hi-Fi Head!</h1>
+          <h3>User based hi-fidelity track list for audiophiles</h3>
           <fieldset>
-            <label htmlFor="inputEmail"> Please log in with email: </label>
+            <label htmlFor="inputEmail" className="email_logIn_text"> Please log in with email: </label>
             <input
               type="email"
               value={email}
