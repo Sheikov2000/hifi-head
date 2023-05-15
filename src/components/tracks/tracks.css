@@ -1,7 +1,8 @@
 .tracks {
     display: flex;
     flex-wrap: wrap;
-    flex-direction:column;
+    flex-direction:row;
+    justify-content:space-around;
 }
 
 .track--list {
@@ -11,6 +12,7 @@
     padding: 0.7rem;
     margin: 0.5rem;
     border-radius: 8px;
+    flex: 0 0 25%;
     
 }
 
@@ -21,6 +23,8 @@
     padding: 0.7rem;
     margin: 0.5rem;
     border-radius: 8px;
+    flex: 0 0 25%;
+   
 }
 
 .song_artist_label {

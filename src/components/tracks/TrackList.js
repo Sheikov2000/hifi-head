@@ -1,12 +1,12 @@
 import "./tracks.css"
 import { useEffect, useState } from "react"
 import { Link, useNavigate } from "react-router-dom"
-import { TrackSearch } from "./TrackSearch"
 
-export const TrackList = ({searchTermsState}) => {
+
+export const TrackList = ({}) => {
   const [tracks, setTracks] = useState([])
   const [genre, setGenre] = useState([])
-  const [filteredTracks, setFilteredTracks] = useState([])
+  
   const navigate = useNavigate()
   const loggedInUser = JSON.parse(localStorage.getItem("hifi_user"))
   
@@ -34,7 +34,7 @@ export const TrackList = ({searchTermsState}) => {
       })
 
   }
-//TODO create a fetch with Delete and render the updated track list
+
   const deleteTrackButton = (track) => {
     fetch(`http://localhost:8088/tracks/${track.id}`,{
       method: "DELETE"
@@ -45,15 +45,7 @@ export const TrackList = ({searchTermsState}) => {
     })
   }
 
-  // TODO earch does not work! The user should be able to type song name, artist or genre in the search.
-  useEffect(
-    () => {
-      const searchedTracks = tracks.filter(track => {
-        track.startsWith(searchTermsState)})
-      setFilteredTracks(searchedTracks)
-    },
-    [ searchTermsState ]
-  )
+
 
  return (
     <>
@@ -67,7 +59,7 @@ export const TrackList = ({searchTermsState}) => {
               <ul>Artist: {track.artistName}</ul>
               <ul>Track: {track.songName}</ul>
               <ul>Genre: {track.genre.genre}</ul>
-              <ul>Best for testing (range): {track.range.frequency}</ul>
+              <ul>Best for testing: {track.range.frequency}</ul>
              
                 
                 {track.userId === (loggedInUser.id) && <>
@@ -77,6 +69,7 @@ export const TrackList = ({searchTermsState}) => {
                 </>
         }
             </section>
+           
           )
         })}
       </div>
