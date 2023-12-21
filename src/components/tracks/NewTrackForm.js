@@ -58,7 +58,7 @@ export const NewTrackForm = () => {
   }
 
   return (
-    <div className="flex justify-between items-center h-20">
+    <div className="">
     <form className="trackForm">
       <h2 className="trackForm__title">Submit New Track</h2>
       <fieldset>
