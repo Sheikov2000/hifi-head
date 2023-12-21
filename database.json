@@ -1,19 +1,306 @@
 {
-  "posts": [
+  "tracks": [
     {
-      "id": 1,
-      "title": "json-server",
-      "author": "typicode"
+      "userId": 1,
+      "artistName": "Sting",
+      "songName": "Desert Rose",
+      "genreId": 6,
+      "rangeId": 2,
+      "id": 1
+    },
+    {
+      "userId": 3,
+      "artistName": "Melanie de Biasio",
+      "songName": "Afro Blue",
+      "genreId": 12,
+      "rangeId": 2,
+      "id": 16
+    },
+    {
+      "userId": 3,
+      "artistName": "Voo Voo",
+      "songName": "Sroda",
+      "genreId": 8,
+      "rangeId": 2,
+      "id": 17
+    },
+    {
+      "userId": 2,
+      "artistName": "AKII",
+      "songName": "Niobe",
+      "genreId": 10,
+      "rangeId": 1,
+      "id": 18
+    },
+    {
+      "userId": 2,
+      "artistName": "Jacob Gurevitsch",
+      "songName": "Mexican Margarita",
+      "genreId": 7,
+      "rangeId": 1,
+      "id": 19
+    },
+    {
+      "userId": 2,
+      "artistName": "Erik Bibb, Habib Koite",
+      "songName": "We Don't Care",
+      "genreId": 14,
+      "rangeId": 1,
+      "id": 21
+    },
+    {
+      "userId": 2,
+      "artistName": "Anne Bisson",
+      "songName": "September in Montreal",
+      "genreId": 1,
+      "rangeId": 3,
+      "id": 22
+    },
+    {
+      "userId": 2,
+      "artistName": "Sophie Zelmani",
+      "songName": "How it Feels",
+      "genreId": 14,
+      "rangeId": 3,
+      "id": 23
+    },
+    {
+      "userId": 2,
+      "artistName": "Yello",
+      "songName": "30,000 Days",
+      "genreId": 3,
+      "rangeId": 2,
+      "id": 24
+    },
+    {
+      "userId": 2,
+      "artistName": "Bozzio Levin Stevens",
+      "songName": "Tzigane",
+      "genreId": 7,
+      "rangeId": 1,
+      "id": 25
+    },
+    {
+      "userId": 2,
+      "artistName": "Duan Wasi",
+      "songName": "Thrill Devine",
+      "genreId": 3,
+      "rangeId": 2,
+      "id": 26
+    },
+    {
+      "userId": 2,
+      "artistName": "Nils Landgren",
+      "songName": "Hide and Seek",
+      "genreId": 5,
+      "rangeId": 1,
+      "id": 27
+    },
+    {
+      "userId": 2,
+      "artistName": "Mathias Eick",
+      "songName": "Caring",
+      "genreId": 2,
+      "rangeId": 1,
+      "id": 28
+    },
+    {
+      "userId": 2,
+      "artistName": "Bliss",
+      "songName": "The Suns of Afterlife",
+      "genreId": 13,
+      "rangeId": 4,
+      "id": 29
+    },
+    {
+      "userId": 2,
+      "artistName": "Yello",
+      "songName": "Kiss In Blue",
+      "genreId": 3,
+      "rangeId": 1,
+      "id": 30
+    },
+    {
+      "userId": 3,
+      "artistName": "biddu",
+      "songName": "Flughand",
+      "genreId": 3,
+      "rangeId": 2,
+      "id": 31
+    },
+    {
+      "userId": 3,
+      "artistName": "Jacob Bellens",
+      "songName": "Polyester Skin",
+      "genreId": 9,
+      "rangeId": 3,
+      "id": 32
+    },
+    {
+      "userId": 2,
+      "artistName": "Arlo Parks",
+      "songName": "Cola",
+      "genreId": 9,
+      "rangeId": 3,
+      "id": 33
+    },
+    {
+      "userId": 2,
+      "artistName": "Phil Colins",
+      "songName": "In The Air Tonight",
+      "genreId": 9,
+      "rangeId": 3,
+      "id": 34
+    },
+    {
+      "userId": 2,
+      "artistName": "Fever Rady",
+      "songName": "Keep The Streets Empty For Me",
+      "genreId": 3,
+      "rangeId": 1,
+      "id": 35
+    },
+    {
+      "userId": 2,
+      "artistName": "Muddy Waters",
+      "songName": "My Home is in The Delta",
+      "genreId": 6,
+      "rangeId": 3,
+      "id": 36
+    },
+    {
+      "userId": 2,
+      "artistName": "Norah Jones",
+      "songName": "Come Away With Me",
+      "genreId": 14,
+      "rangeId": 3,
+      "id": 38
+    },
+    {
+      "userId": 2,
+      "artistName": "Daft Punk",
+      "songName": "Within",
+      "genreId": 9,
+      "rangeId": 2,
+      "id": 39
+    },
+    {
+      "userId": 2,
+      "artistName": "Sting",
+      "songName": "Song",
+      "genreId": 9,
+      "rangeId": 3,
+      "id": 41
+    },
+    {
+      "userId": 2,
+      "artistName": "Yello",
+      "songName": "Race",
+      "genreId": 3,
+      "rangeId": 2,
+      "id": 42
     }
   ],
-  "comments": [
+  "ranges": [
     {
       "id": 1,
-      "body": "some comment",
-      "postId": 1
+      "frequency": "All Frequencies"
+    },
+    {
+      "id": 2,
+      "frequency": "Bass"
+    },
+    {
+      "id": 3,
+      "frequency": "Mid-range"
+    },
+    {
+      "id": 4,
+      "frequency": "High Frequencies"
     }
   ],
-  "profile": {
-    "name": "typicode"
-  }
+  "users": [
+    {
+      "name": "",
+      "email": "",
+      "id": 1
+    },
+    {
+      "email": "nick@nick.org",
+      "name": "Nick",
+      "id": 2
+    },
+    {
+      "email": "joe@joe.org",
+      "name": "Joe Carlson",
+      "id": 3
+    },
+    {
+      "email": "bob@bob.org",
+      "name": "Bob Bobberson",
+      "id": 4
+    }
+  ],
+  "genres": [
+    {
+      "id": 1,
+      "genre": "Jazz-vocals"
+    },
+    {
+      "id": 2,
+      "genre": "Jazz-instrumental"
+    },
+    {
+      "id": 3,
+      "genre": "Electronic"
+    },
+    {
+      "id": 4,
+      "genre": "Classical"
+    },
+    {
+      "id": 5,
+      "genre": "Soul/R&B"
+    },
+    {
+      "id": 6,
+      "genre": "Folk"
+    },
+    {
+      "id": 7,
+      "genre": "Fusion"
+    },
+    {
+      "id": 8,
+      "genre": "Rock"
+    },
+    {
+      "id": 9,
+      "genre": "Pop"
+    },
+    {
+      "id": 10,
+      "genre": "Metal"
+    },
+    {
+      "id": 11,
+      "genre": "Country"
+    },
+    {
+      "id": 12,
+      "genre": "Indi"
+    },
+    {
+      "id": 13,
+      "genre": "Ambient"
+    },
+    {
+      "id": 14,
+      "genre": "Singer/Songwriter"
+    },
+    {
+      "id": 15,
+      "genre": "Other"
+    }
+  ]
 }
